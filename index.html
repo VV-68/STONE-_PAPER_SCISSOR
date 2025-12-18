@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ROCK PAPER SCISSOR GAME</title>
+        
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">ROCK PAPER SCISSOR GAME</h1>
+        <button class="btn" onclick=
+         "
+            clickedfn('rock');
+         "
+            > <img class="im" src="ROCK-emoji.png">
+         </button>
+
+        <button class="btn" onclick=
+            "
+            clickedfn('paper');
+            "
+            >  <img class="im" src="PAPER-emoji.png">
+        </button>
+
+        <button class="btn" onclick=
+         "
+            clickedfn('scissor');
+         "
+            > <img class="im" src="SCISSOR-emoji.png">
+        </button>
+
+        <p class="para">
+            
+        </p>
+
+        <button class="bt2" onclick=
+        "
+            obj1.win=0;
+            obj1.lose=0;
+            obj1.tie=0;
+            pEl.innerText=`RESULTS 
+                WIN : ${obj1.win}    LOSE : ${obj1.lose}    TIE : ${obj1.tie}`;
+            localStorage.removeItem('data');
+        "
+        >
+            RESET
+        </button>
+        
+
+        <script src="script.js">
+
+        </script>
+    </body>
+
+</html>
