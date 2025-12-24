@@ -4,7 +4,7 @@
             }
 
             .btn {
-                background-color: hsl(0, 0%, 1%);
+                background-color:hsl(281, 87%, 56%);
                 width:150px;
                 height:150px;
                 border-radius: 75px;
@@ -24,12 +24,17 @@
                 height:50px;
             }
             .bt2 {
-                background-color: hsl(0, 0%, 1%);
+                background-color: hsl(281, 87%, 56%);
                 color: yellow;
                 font-weight: bolds;
                 width: 100px;
                 height: 50px ;
                 font-size: 30px;
                 border: 3px solid yellow;
+                border-radius: 20px;
+                margin: 30px;
                 cursor: pointer;
+            }
+            .bt3 {
+                width: 250px;
             }

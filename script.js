@@ -1,5 +1,5 @@
            let pEl=document.querySelector(".para");
-            
+            let play=false;
             let newObj=JSON.parse(localStorage.getItem('data')) || undefined;
             let obj1=newObj || {
                 win:0,
@@ -31,7 +31,6 @@
 
                 }else if(clickedB==='PAPER'){
                     if(move==='ROCK') {
-                        console.log('you win');
                         obj1.win++;
                         res='YOU WIN';
                     }
@@ -40,7 +39,6 @@
                          res='TIE';
                     }
                     else {
-                        console.log('computer won');
                         obj1.lose++;
                         res='COMPUTER WON';
                     }
@@ -79,4 +77,12 @@
                 }else if(num >= (2/3) && num <1){
                     return 'scissor';
                 }
+            }
+            let id;
+            let autoBtn= document.querySelector(".bt3");
+            const autoPlay=function(){
+                    play=true;
+                    autoBtn.innerText='STOP AUTOPLAY';
+                    let clickedB=pickMove();
+                    clickedfn(clickedB);
             }
